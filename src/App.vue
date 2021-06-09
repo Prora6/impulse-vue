@@ -2,6 +2,8 @@
   <div id="app">
     <HeaderWebsite/>
     <BannerWebsite/>
+    <SectionActiviry/>
+    <SectionPartner/>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -10,13 +12,17 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import HeaderWebsite from './components/HeaderWebsite.vue'
 import BannerWebsite from './components/BannerWebsite.vue'
+import SectionActiviry from './components/SectionActivity.vue'
+import SectionPartner from './components/SectionPartner.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
     HeaderWebsite,
-    BannerWebsite
+    BannerWebsite,
+    SectionActiviry,
+    SectionPartner
   }
 }
 </script>
@@ -42,4 +48,28 @@ p, h1, h2, h3 {
 ul {
   margin: 0;
 }
+.wrap__title{
+  display: flex;
+  align-items: center;
+  max-width: 1334px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.section__number {
+  margin-right: 26px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #118BDD;
+}
+.section__title {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 69px;
+  color: #000000;
+}
+
+
 </style>
+
+

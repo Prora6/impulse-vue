@@ -39,30 +39,24 @@ export default {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 10px 0px 10px;
     &__content {
         display: flex;
         align-items: center;
-        &-logo{
-            margin-right: 88px;
-        }
+        max-width: 1363.39px;
+        width: 100%;
+        justify-content: space-between;
         &-navigation{
-            margin-right: 88px;
+            max-width: 949.16px;
+            width: 100%;
         }
         .navigation {
             &__list {
                 display: flex;
                 list-style-type: none;
                 padding: 0;
+                justify-content: space-between;
                 &-item{
-                    &:hover {
-                        a {
-                            color: #118BDD;
-                        }
-                    }
-                    &:not(:last-child){
-                        margin-right: 50px;
-                    }
                     .link{
                         text-decoration: none;
                         text-transform: uppercase;
@@ -72,6 +66,11 @@ export default {
                         letter-spacing: 0.05em;
                         cursor: pointer;
                         color: #FFFFFF;
+                    }
+                    &:hover {
+                        a {
+                            color: #118BDD;
+                        }
                     }
                 }
             }

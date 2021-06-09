@@ -108,6 +108,7 @@ export default {
     display: flex;
     justify-content: center;
     height: 850px;
+    margin-bottom: 120px;
     &__content {
         max-width: 1370px;
         width: 100%;
@@ -164,9 +165,8 @@ export default {
         }
         .navigation {
             position: absolute;
-            top: 50%;
-            right: 48px;
-            transform: translate(0px, 46px);
+            top: 330px;
+            right: 58px;
             &__list{
                 flex-direction: column;
                 padding: 0;
