@@ -4,6 +4,9 @@
     <BannerWebsite/>
     <SectionActiviry/>
     <SectionPartner/>
+    <SectionObjects/>
+    <SectionNews/>
+
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -14,6 +17,9 @@ import HeaderWebsite from './components/HeaderWebsite.vue'
 import BannerWebsite from './components/BannerWebsite.vue'
 import SectionActiviry from './components/SectionActivity.vue'
 import SectionPartner from './components/SectionPartner.vue'
+import SectionObjects from './components/SectionObjects.vue'
+import SectionNews from './components/SectionNews.vue'
+
 
 export default {
   name: 'App',
@@ -22,7 +28,9 @@ export default {
     HeaderWebsite,
     BannerWebsite,
     SectionActiviry,
-    SectionPartner
+    SectionPartner,
+    SectionObjects,
+    SectionNews
   }
 }
 </script>
@@ -54,6 +62,10 @@ ul {
   max-width: 1334px;
   width: 100%;
   margin-bottom: 50px;
+}
+.wrap__title-text{
+  display: flex;
+  align-items: center;
 }
 .section__number {
   margin-right: 26px;

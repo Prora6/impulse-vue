@@ -59,8 +59,6 @@ export default {
           transform: rotate(180deg);
         }
       }
-      .right__button {
-      }
       button {
         &:hover {
           background: #118bdd;
