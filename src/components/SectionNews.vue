@@ -1,10 +1,10 @@
 <template>
     <section class="news">
         <div class="wrap__title">
-      <div class="wrap__title-text">
-        <span class="section__number">05</span>
-        <h2 class="section__title">Новости</h2>
-      </div>
+            <div class="wrap__title-text">
+                <span class="section__number">05</span>
+                <h2 class="section__title">Новости</h2>
+            </div>
         </div>
         <div class="news__content">
             <a href="" class="news__content-link link">

@@ -6,6 +6,8 @@
     <SectionPartner/>
     <SectionObjects/>
     <SectionNews/>
+    <SectionCompany/>
+    <SectionFooter/>
 
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -19,6 +21,8 @@ import SectionActiviry from './components/SectionActivity.vue'
 import SectionPartner from './components/SectionPartner.vue'
 import SectionObjects from './components/SectionObjects.vue'
 import SectionNews from './components/SectionNews.vue'
+import SectionCompany from './components/SectionCompany.vue'
+import SectionFooter from './components/SectionFooter.vue'
 
 
 export default {
@@ -30,7 +34,9 @@ export default {
     SectionActiviry,
     SectionPartner,
     SectionObjects,
-    SectionNews
+    SectionNews,
+    SectionCompany,
+    SectionFooter,
   }
 }
 </script>

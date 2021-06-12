@@ -128,7 +128,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
-  padding-top: 120px;
+  padding: 120px 0 120px 0;
   .wrap__title {
     &-text {
       display: flex;
