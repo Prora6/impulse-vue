@@ -31,13 +31,19 @@
                 </div>
                 <span class="link__date">29.03.2021</span>
             </a>
+            <a href="/news" class="news__content-more">
+                <span class="text">все новости</span>
+                <Arrow class="arrow"/>
+            </a>
         </div>
     </section>
 </template>
 
 <script>
+import Arrow from './SvgIcons/LeftArrowButton.vue'
+
 export default {
-  components: {},
+  components: {Arrow},
 };
 </script>
 
@@ -46,6 +52,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 120px;
     &__content {
             display: flex;
             height: 500px;
@@ -96,6 +103,29 @@ export default {
                 color: #FFFFFF;
                 padding: 29px 50px 28px 50px;
                 background: #118BDD;
+            }
+        }
+        &-more{
+            position: absolute;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            right: 0;
+            top: -76px;
+            cursor: pointer;
+            .text {
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #000000;
+                margin-right: 16px;
+            }
+            .arrow {
+                fill: #000000;
+                width: 12px;
+                height: 12px;
             }
         }
     }

@@ -1,14 +1,8 @@
 <template>
   <div id="app">
     <HeaderWebsite/>
-    <BannerWebsite/>
-    <SectionActiviry/>
-    <SectionPartner/>
-    <SectionObjects/>
-    <SectionNews/>
-    <SectionCompany/>
+    <div><router-view /></div>
     <SectionFooter/>
-
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -16,12 +10,7 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import HeaderWebsite from './components/HeaderWebsite.vue'
-import BannerWebsite from './components/BannerWebsite.vue'
-import SectionActiviry from './components/SectionActivity.vue'
-import SectionPartner from './components/SectionPartner.vue'
-import SectionObjects from './components/SectionObjects.vue'
-import SectionNews from './components/SectionNews.vue'
-import SectionCompany from './components/SectionCompany.vue'
+
 import SectionFooter from './components/SectionFooter.vue'
 
 
@@ -30,13 +19,12 @@ export default {
   components: {
     // HelloWorld
     HeaderWebsite,
-    BannerWebsite,
-    SectionActiviry,
-    SectionPartner,
-    SectionObjects,
-    SectionNews,
-    SectionCompany,
-    SectionFooter,
+
+    SectionFooter
+  },
+    mounted() {
+      console.log(this.$route)
+      this.$route
   }
 }
 </script>
