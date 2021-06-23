@@ -36,7 +36,7 @@ export default {
 <style lang="scss">
 .company{
     background-size:cover;
-    background-image: url('./images/building.jpg');
+    background-image: url('../images/building.jpg');
     display: flex;
     justify-content: center;
     padding: 72px 0px;

@@ -70,11 +70,11 @@ export default {
             text-decoration: none;
             cursor: pointer;
             &:nth-child(1){
-                background-image: url('./images/shield.jpg');
+                background-image: url('../images/shield.jpg');
                 margin-right: 20px;
             }
             &:nth-child(2){
-                background-image: url('./images/Boiler.jpg');
+                background-image: url('../images/Boiler.jpg');
             }
         }
         .link {

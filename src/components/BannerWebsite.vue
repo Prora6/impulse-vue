@@ -103,7 +103,7 @@ export default {
 
 <style lang="scss">
 .banner {
-    background-image: url('./images/banner.jpg');
+    background-image: url('../images/banner.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -177,7 +177,7 @@ export default {
                         width: 98px;
                         height: 25px;
                         padding: 3px 24px;
-                        background-image: url('./images/arrow.png');
+                        background-image: url('../images/arrow.png');
                         background-size: cover;
                         font-weight: 500;
                         font-size: 12px;

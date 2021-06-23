@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderWebsite/>
+    <HeaderWebsite :backgroundColor="backgroundColor" :color="color" v-bind:darkLogo="darkLogo"/>
     <div><router-view /></div>
     <SectionFooter/>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -21,6 +21,26 @@ export default {
     HeaderWebsite,
 
     SectionFooter
+  },
+    data() {
+    return {
+      backgroundColor:'transparent',
+      color:'#FFFFFF',
+      darkLogo :false
+    }
+  },
+  watch: {
+    '$route.path'() {
+      if(this.$route.path === '/news') {
+        this.backgroundColor = '#FFFFFF',
+        this.color = '#000000',
+        this.darkLogo = true
+      } else {
+        this.backgroundColor = 'transparent',
+        this.color = '#FFFFFF',
+        this.darkLogo = false
+      }
+    }
   },
     mounted() {
       console.log(this.$route)

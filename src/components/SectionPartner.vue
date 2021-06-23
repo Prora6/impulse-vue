@@ -12,19 +12,19 @@
     </div>
     <ul class="partner__list">
         <li class="partner__list-item">
-            <img src="./images/skolkovo.png" alt="picture">
+            <img src="../images/skolkovo.png" alt="picture">
         </li>
         <li class="partner__list-item">
-            <img src="./images/yandex.png" alt="picture">
+            <img src="../images/yandex.png" alt="picture">
         </li>
         <li class="partner__list-item">
-            <img src="./images/rosneft.png" alt="picture">
+            <img src="../images/rosneft.png" alt="picture">
         </li>
         <li class="partner__list-item">
-            <img src="./images/gazprom.png" alt="picture">
+            <img src="../images/gazprom.png" alt="picture">
         </li>
         <li class="partner__list-item">
-            <img src="./images/lukoil.png" alt="picture">
+            <img src="../images/lukoil.png" alt="picture">
         </li>
     </ul>
   </section>

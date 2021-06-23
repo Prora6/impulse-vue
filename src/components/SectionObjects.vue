@@ -21,7 +21,7 @@
       </div>
       <ul class="objects__content-list list">
         <li class="list__item">
-          <img src="./images/boilerRoom.jpg" alt="image" class="list__item-img"/>
+          <img src="../images/boilerRoom.jpg" alt="image" class="list__item-img"/>
           <div class="list__item-information information">
             <p class="information__title">Заголовок про кательную</p>
             <div class="information__location">
@@ -41,7 +41,7 @@
           </div>
         </li>
         <li class="list__item">
-          <img src="./images/boilerRoom.jpg" alt="image" class="list__item-img"/>
+          <img src="../images/boilerRoom.jpg" alt="image" class="list__item-img"/>
           <div class="list__item-information information">
             <p class="information__title">Заголовок про кательную</p>
             <div class="information__location">
@@ -61,7 +61,7 @@
           </div>
         </li>
         <li class="list__item">
-          <img src="./images/boilerRoom.jpg" alt="image" class="list__item-img"/>
+          <img src="../images/boilerRoom.jpg" alt="image" class="list__item-img"/>
           <div class="list__item-information information">
             <p class="information__title">Заголовок про кательную</p>
             <div class="information__location">
@@ -81,7 +81,7 @@
           </div>
         </li>
         <li class="list__item">
-          <img src="./images/boilerRoom.jpg" alt="image" class="list__item-img"/>
+          <img src="../images/boilerRoom.jpg" alt="image" class="list__item-img"/>
           <div class="list__item-information information">
             <p class="information__title">Заголовок про кательную</p>
             <div class="information__location">

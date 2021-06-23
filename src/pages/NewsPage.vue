@@ -46,7 +46,15 @@
 
 <script >
 export default {
-
+    data() {
+        return {
+            links : [
+                    {title:"Монтаж котельных и монтаж котлов топления",
+                        text:"Монтаж котельных является основным направлением деятельности нашей компании. Как правило, при монтаже котельных установок и монтаже котлов устанавливаются не только сами котлы…",
+                        url:"../images/scoreboard.jpg"},
+            ]
+        };
+    }
 }
 </script>
 
@@ -95,22 +103,22 @@ export default {
             align-items: flex-end;
             margin-bottom: 20px;
             &:nth-child(1){
-                background-image: url('../components/images/scoreboard.jpg');
+                background-image: url('../images/scoreboard.jpg');
             }
             &:nth-child(2){
-                background-image: url('../components/images/fitting.jpg');
+                background-image: url('../images/fitting.jpg');
                 .list__item-description{
                     padding-bottom: 12px;
                 }
             }
             &:nth-child(3){
-                background-image: url('../components/images/pipes.jpg');
+                background-image: url('../images/pipes.jpg');
             }
             &:nth-child(4){
-                background-image: url('../components/images/bend.jpg');
+                background-image: url('../images/bend.jpg');
             }
             &:nth-child(5){
-                background-image: url('../components/images/engine.jpg');
+                background-image: url('../images/engine.jpg');
             }
             &-description{
                 background: #FFFFFF;

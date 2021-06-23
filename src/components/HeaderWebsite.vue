@@ -1,13 +1,14 @@
 <template>
-  <header class="header">
+  <header class="header" :style="{backgroundColor:backgroundColor}">
     <div class="header__content">
-      <div class="header__content-logo">
-        <Logo class="logo" />
+      <div class="header__content-logo" >
+        <img src="../images/darkLogo.png" alt="" class="logo__dark" v-if="darkLogo">
+        <Logo class="logo" v-else/>
       </div>
       <nav class="header__content-navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__list-item" v-for="(item, index) in links" :key="index">
-            <router-link v-bind:to="item.link" class="link">{{item.text}}</router-link>
+            <router-link v-bind:to="item.link" class="link" :style="{color:color}">{{item.text}}</router-link>
           </li>
           <!-- <li class="navigation__list-item"><router-link to="/news" class="link">Услуги</router-link></li>
                     <li class="navigation__list-item"><router-link to="/news" class="link">Раскрытие информации</router-link></li>
@@ -18,7 +19,7 @@
         </ul>
       </nav>
       <div class="header__content-contacts">
-        <p class="number">+7(123) 456-78-90</p>
+        <p class="number" :style="{color:color}">+7(123) 456-78-90</p>
         <p class="mail">yourmail@company.com</p>
       </div>
     </div>
@@ -28,19 +29,35 @@
 <script>
 import Logo from "./SvgIcons/LogoHeader.vue";
 
+
 export default {
   components: {
     Logo,
+
+  },
+  props : {
+    backgroundColor: {
+      type:String,
+      default: 'black'
+    },
+    color: {
+      type:String,
+      default: 'black'
+    },
+    darkLogo: {
+      type:Boolean,
+      default:false
+    }
   },
   data() {
     return {
-      links: [{ text: "О компании", link: "/news" },
+      links: [{ text: "О компании", link: "/" },
         { text: "Услуги", link: "/news" },
         { text: "Раскрытие информации", link: "/news" },
         { text: "Абонентам", link: "/news" },
         { text: "Наши объекты", link: "/news" },
         { text: "Новости", link: "/news" },
-        { text: "Контакты", link: "/news" },],
+        { text: "Контакты", link: "/news" },]
     };
   },
 };
@@ -52,7 +69,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 30px 10px 0px 10px;
+  padding: 30px 10px 30px 10px;
   &__content {
     display: flex;
     align-items: center;

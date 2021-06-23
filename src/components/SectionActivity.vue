@@ -56,13 +56,13 @@ export default {
         margin-right: 20px;
       }
       &:nth-child(1) {
-        background-image: url("./images/factory.png");
+        background-image: url("../images/factory.png");
       }
       &:nth-child(2) {
-        background-image: url("./images/scheme.png");
+        background-image: url("../images/scheme.png");
       }
       &:nth-child(3) {
-        background-image: url("./images/engineer.png");
+        background-image: url("../images/engineer.png");
       }
       height: 100%;
       max-width: 620px;
